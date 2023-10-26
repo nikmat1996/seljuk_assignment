@@ -1,0 +1,44 @@
+.blog_wrapper {
+  padding: 18px 72px 37px 79px;
+  background-color: #ffffff;
+  width: min(100%, 1339px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog_heading {
+  font-family: "Satoshi";
+  font-size: 61px;
+  color: #373737;
+}
+
+.blog_underline {
+  transform: translateY(-100%);
+}
+
+.blog_subText {
+  color: #7b7b7b;
+  font-family: "Noto Sans", Helvetica;
+  font-size: 21px;
+  margin-block-end: 40px;
+}
+
+.blog_cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    /* flex-wrap: wrap; */
+}
+
+.blog_card {
+    overflow: hidden;
+    width: calc(max-content/2);
+
+}
+
+.blog_card > img {
+    width: 100%;
+}

@@ -1,0 +1,82 @@
+.formWrap {
+  width: min(95%, 456px);
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 30px;
+  font-family: "Noto Sans", Helvetica;
+  border-radius: 20px;
+}
+
+.formWrap > h2 {
+  font-family: "ABeeZee", Helvetica;
+  font-size: 34px;
+  color: #373737;
+  line-height: 40px;
+  margin-block-end: 10px;
+}
+
+.formWrap > p {
+  font-size: 1rem;
+  line-height: 22px;
+  color: #7b7b7b;
+}
+
+.formWrap button {
+  width: 100%;
+  padding: 10px 32px;
+  background-color: #d80027;
+  color: #ffffff;
+  border: 0;
+  font-family: "Noto Sans", Helvetica;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-block-end: 20px;
+  line-height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formWrap button:hover {
+    background-color: rgba(232, 102, 125, 1);
+}
+
+.formWrap > h3 {
+  color: #373737;
+  text-align: center;
+  margin-block-end: 10px;
+}
+
+.formGroup {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formGroup > label {
+    color: #373737;
+    font-size: 14px;
+    line-height: 19px;
+    margin-block-end: 5px;
+}
+
+.formGroup > input[type="password"] + label{
+    margin-block-end: 8px;
+}
+
+.formGroup > input {
+    padding: 10px 16px;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.formGroup > input::placeholder {
+    font-size: 1rem;
+    color: #7b7b7b;
+}
+
+.formLink {
+  color: #d80027 !important;
+  text-decoration: underline;
+  text-align: center;
+}

@@ -4,10 +4,12 @@
   font-size: 26px;
   letter-spacing: 0;
   line-height: normal;
-  padding: 9px 28px;
+  width: 199px;
+  height: 53px;
   background: inherit;
   cursor: pointer;
   border-radius: 3px;
+  border: none;
 }
 
 .primaryColor {
