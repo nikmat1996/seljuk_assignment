@@ -1,0 +1,48 @@
+.button {
+  color: #ffffff;
+  font-family: "Segoe UI-Semibold", Helvetica;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 9px 28px;
+  background: inherit;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.primaryColor {
+  background: #6884fd;
+}
+
+.gradientColor {
+  background: linear-gradient(
+    90deg,
+    rgb(47, 223, 236) 0%,
+    rgb(69, 176, 244) 22.27%,
+    rgb(98, 114, 255) 41.55%,
+    rgb(137, 89, 253) 62.9%,
+    rgb(180, 61, 251) 76.96%,
+    rgb(246, 70, 229) 100%
+  );
+}
+
+.buttonWrap {
+  border-radius: 3px;
+  position: relative;
+  width: max-content;
+}
+
+.buttonWrap::after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  inset: 0;
+  filter: blur(24px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.buttonWrap:hover::after{
+  opacity: 1;
+}
