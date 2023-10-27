@@ -8,30 +8,12 @@ import Blog from './components/Blog'
 function App() {
 
   return (
-    <>
+    <div className='container'>
       <ButtonPrimary>BOOK NOW</ButtonPrimary>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <ButtonGradient>BOOK NOW</ButtonGradient>
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Form />
-      <br/>
-      <br/>
-      <br/>
       <Blog />
-
-    </>
+    </div>
   )
 }
 

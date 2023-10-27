@@ -3,6 +3,14 @@ import "../styles/Blog.css";
 import underline from "../assets/underline.svg";
 import imgUrl from "../assets/Rectangle415.png";
 import thumbnail from "../assets/Rectangle1413.png";
+import flag from "../assets/flag.svg";
+import star from "../assets/star.svg";
+import halfStar from "../assets/halfStar.svg";
+import darkStar from "../assets/darkStar.svg";
+import Comment from "../assets/Comment.svg";
+import Thumbs from "../assets/Thumbs.svg";
+import share from "../assets/share.svg";
+import shareIcon from "../assets/shareIcon.png";
 
 const data = [
   {
@@ -11,6 +19,7 @@ const data = [
     name: "Cristian Fernández",
     description: "Derecho penal",
     rating: 2.5,
+    flag,
     blogTitle: "Title of blog post",
     thumbnail: thumbnail,
     blogContent:
@@ -25,6 +34,7 @@ const data = [
     name: "Cristian Fernández",
     description: "Derecho penal",
     rating: 2.5,
+    flag,
     blogTitle: "Title of blog post",
     thumbnail: thumbnail,
     blogContent:
@@ -39,6 +49,7 @@ const data = [
     name: "Cristian Fernández",
     description: "Derecho penal",
     rating: 2.5,
+    flag,
     blogTitle: "Title of blog post",
     thumbnail: thumbnail,
     blogContent:
@@ -74,20 +85,56 @@ const BlogCardContainer = () => (
 );
 
 const BlogCard = ({ item }) => {
-    const { id,
+  const {
     imgUrl,
     name,
     description,
     rating,
-    blogTitle,
     thumbnail,
+    blogTitle,
     blogContent,
     tags,
     commentsCount,
-    likesCount } = item;
+    likesCount,
+  } = item;
   return (
     <article className="blog_card">
-        <img src={imgUrl} alt="wallpaper" />
+      <div className="wallpaper_wrap"><img className="wallpaper" src={imgUrl} alt="wallpaper" /></div>
+      <div className="card_profileWrap">
+        <img className="card_profilePic" src={thumbnail} alt="profile photo" />
+        <div className="card_nameWrap">
+          <h2>{name}</h2>
+          <p>{description}</p>
+          <div className="card_rating">
+            <img src={star} alt="starIcon" />
+            <img src={star} alt="starIcon" />
+            <img src={halfStar} alt="starIcon" />
+            <img src={darkStar} alt="starIcon" />
+            <img src={darkStar} alt="starIcon" />
+          </div>
+          <div className="shareIcon">
+            <img src={shareIcon} alt="share icon" />
+            
+          </div>
+        </div>
+        <img className="card_flag" src={flag} alt="flag icon" />
+      </div>
+      <h2 className="card_blogTitle">{blogTitle}</h2>
+      <p className="card_blogContent">{blogContent}</p>
+      <div className="card_tagsWrap">
+        {tags.map((tag, i) => <div key={tag+i}>{tag}</div>)}
+      </div>
+      <div className="card_mediaWrap">
+        <div className="engagements">
+          <img src={Comment} alt="comments" />
+          <span>{commentsCount}</span>
+        </div>
+        <div className="engagements">
+          <img src={Thumbs} alt="likes" />
+          <span>{likesCount}</span>
+        </div>
+        <button>Compartir <span><img src={share} alt="share icon" /></span></button>
+      </div>
     </article>
   );
 };
