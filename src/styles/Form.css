@@ -36,7 +36,7 @@
 }
 
 .formWrap button:hover {
-    background-color: rgba(232, 102, 125, 1);
+  background-color: rgba(232, 102, 125, 1);
 }
 
 .formWrap > h3 {
@@ -53,27 +53,27 @@
 }
 
 .formGroup > label {
-    color: #373737;
-    font-size: 14px;
-    line-height: 19px;
-    margin-block-end: 5px;
+  color: #373737;
+  font-size: 14px;
+  line-height: 19px;
+  margin-block-end: 5px;
 }
 
-.formGroup > input[type="password"] + label{
-    margin-block-end: 8px;
+.formGroup > input[type="password"] + label {
+  margin-block-end: 8px;
 }
 
 .formGroup > input {
-    padding: 10px 16px;
-    border: 1px solid #292929;
-    border-radius: 4px;
-    font-size: 1rem;
-    line-height: 28px;
+  padding: 10px 16px;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 28px;
 }
 
 .formGroup > input::placeholder {
-    font-size: 1rem;
-    color: #7b7b7b;
+  font-size: 1rem;
+  color: #7b7b7b;
 }
 
 .formLink {

@@ -114,7 +114,6 @@ const BlogCard = ({ item }) => {
           </div>
           <div className="shareIcon">
             <img src={shareIcon} alt="share icon" />
-            
           </div>
         </div>
         <img className="card_flag" src={flag} alt="flag icon" />

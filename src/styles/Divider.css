@@ -1,19 +1,19 @@
 .dividerWrap {
-    display: flex;
-    align-items: center;
-    margin-block: 20px;
+  display: flex;
+  align-items: center;
+  margin-block: 20px;
 }
 
-.dividerLine{
-    flex-grow: 1;
-    height: 1px;
-    background-color: #cdcdcd;
+.dividerLine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #cdcdcd;
 }
 
 .dividerWrap > p {
-    font-size: 1rem;
-    color: #373737;
-    line-height: 22px;
-    font-family: "Noto Sans", Helvetica ;
-    padding-inline: 5px;
+  font-size: 1rem;
+  color: #373737;
+  line-height: 22px;
+  font-family: "Noto Sans", Helvetica;
+  padding-inline: 5px;
 }

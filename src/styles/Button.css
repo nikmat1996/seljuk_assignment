@@ -45,6 +45,6 @@
   z-index: -1;
 }
 
-.buttonWrap:hover::after{
+.buttonWrap:hover::after {
   opacity: 1;
 }
