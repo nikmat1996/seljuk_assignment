@@ -4,3 +4,11 @@
     gap: 3rem;
     padding: 3rem;
 }
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        
+        padding: 1rem;
+    }
+  }

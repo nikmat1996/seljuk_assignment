@@ -213,4 +213,8 @@
   .blog_cardContainer {
     flex-direction: column;
   }
+
+  .blog_wrapper {
+    padding: 1rem;
+  }
 }
