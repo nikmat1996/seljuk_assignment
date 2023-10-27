@@ -49,6 +49,7 @@
   margin-block: 20px;
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
 }
 
 .formGroup > label {
@@ -79,4 +80,12 @@
   color: #d80027 !important;
   text-decoration: underline;
   text-align: center;
+}
+
+.errorMsg {
+  position: absolute;
+  color: #d80027;
+  font-size: 12px;
+  bottom: -22%;
+  right: 2%;
 }

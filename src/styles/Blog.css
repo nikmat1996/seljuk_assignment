@@ -42,3 +42,9 @@
 .blog_card > img {
     width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .blog_cardContainer {
+    flex-direction: column;
+  }
+}
