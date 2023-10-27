@@ -27,6 +27,7 @@ function Form() {
             type="email"
             name="email"
             id="email"
+            className={errors.email? "active": "test"}
             placeholder="Email"
             {...register("email", {
               required: "Email is required.",
@@ -45,6 +46,7 @@ function Form() {
             name="username"
             id="username"
             placeholder="Username"
+            className={errors.username? "active": "test"}
             {...register("username", { required: "Username required." })}
           />
           <label htmlFor="username">Username</label>
@@ -56,6 +58,7 @@ function Form() {
             name="password"
             id="password"
             placeholder="Password"
+            className={errors.password? "active": "test"}
             {...register("password", { required: "Enter password", minLength: {
               value: 6,
               message: "Minimum 6."
@@ -70,6 +73,7 @@ function Form() {
             name="confirmPassword"
             id="confirmPassword"
             placeholder="Confirm Password"
+            className={errors.confirmPassword? "active": "test"}
             {...register("confirmPassword", { 
               required: true,
               validate: (value) => value === watch("password") || "Passwords do not match"

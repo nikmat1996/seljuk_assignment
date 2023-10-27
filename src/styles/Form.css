@@ -89,3 +89,7 @@
   bottom: -22%;
   right: 2%;
 }
+
+.active {
+  border: 1px solid #d80027 !important;
+}
